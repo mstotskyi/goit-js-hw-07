@@ -19,7 +19,7 @@ const elements = images.map((image) => {
   const liEl = document.createElement("li");
   liEl.insertAdjacentHTML(
     "afterbegin",
-    `<img src="${image.url}" alt="${image.alt}" width = 450>`
+    `<img src="${image.url}" alt="${image.alt}">`
   );
 
   return liEl;

@@ -6,6 +6,7 @@ console.log(inputViewer);
 input.addEventListener("input", onInputChange);
 
 function onInputChange(event) {
-  console.log(event.currentTarget.value);
-  inputViewer.textContent = event.currentTarget.value;
+  event.currentTarget.value.trim()
+    ? (inputViewer.textContent = event.currentTarget.value)
+    : (inputViewer.textContent = "незнакомец");
 }

@@ -8,4 +8,4 @@ function changeFontSize(event) {
   let fontSize = event.currentTarget.value;
 
   text.style.fontSize = fontSize + "px";
-}
+};

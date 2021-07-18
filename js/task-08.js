@@ -23,7 +23,7 @@ function handleRenderBtnClick () {
 
 function createBoxes(amount) {
     const collection = []
-    for (let i = 0; i < amount; i +1){
+    for (let i = 0; i < amount; i +=1){
         
      const div = document.createElement('div');
      div.style.backgroundColor = createRandom();
@@ -42,6 +42,9 @@ function createRandom() {
 }
 
 function handleDestroyBtnClick() {
+boxesRef.innerHTML = '';
+defaultSize = 30;
+inputNumber.value = '';
 
 }
 

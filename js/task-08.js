@@ -1,16 +1,11 @@
 const inputNumber = document.querySelector("#controls input");
-console.log(inputNumber);
 const renderBtn = document.querySelector('[data-action = render]');
-console.log(renderBtn);
 const destroyBtn = document.querySelector('[data-action = destroy]');
-console.log(destroyBtn);
 const boxesRef = document.querySelector('#boxes');
-console.log(boxesRef);
 
 let defaultSize = 30;
 
 renderBtn.addEventListener('click', handleRenderBtnClick);
-
 destroyBtn.addEventListener('click', handleDestroyBtnClick);
 
 
